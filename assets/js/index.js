@@ -118,6 +118,7 @@ for (let i = 0; i < notificationsList.length; i++) {
     if (notificationsList[i].activityContent.postImage) {
         const imageElement = document.createElement('img')
         imageElement.setAttribute('src', `./assets/images/${notificationsList[i].activityContent.postImage}`)
+        imageElement.setAttribute('alt','user post')
         imageElement.classList.add('post-img')
         const parentElement = document.querySelectorAll('.notification-item')[i]
         parentElement.classList.add('commented')
